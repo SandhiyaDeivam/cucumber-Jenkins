@@ -1,0 +1,101 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Test Add function",
+        "description": "",
+        "id": "test-calculator-functionality;test-add-function",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 925200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user enters 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 12
+                }
+              ],
+              "location": "sample2.user_enters(Integer)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 74800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters plus",
+            "match": {
+              "location": "sample2.user_enters_plus()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 57900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters second value as 2",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 28
+                }
+              ],
+              "location": "sample2.user_enters_second_value_as(Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 36000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user press equal",
+            "match": {
+              "location": "sample2.user_press_equal()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 38400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate output as 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 19
+                }
+              ],
+              "location": "sample2.validate_output_as(Integer)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Test Calculator functionality",
+    "description": "",
+    "id": "test-calculator-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/resources/featurefolder/scenario2.feature",
+    "tags": []
+  }
+]
